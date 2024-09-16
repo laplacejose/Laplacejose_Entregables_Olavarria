@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles.css">
+    <title>Consumo de APIs</title>
+</head>
+<body>
+    <h1>Consumo API  de clima (API openweathermap.org)  </h1>
+    <div>
+        <label for="Ciudad">Ingrese ciudad:</label>
+        <input type="text" id="ciudad" placeholder="por ejemplo Olavarria">
+        <button onclick="buscarClima()">Buscar Clima</button>
+    </div>
+    <div id="clima">
+        <!-- Lugar donde se mostraran los datos de API de clima-->
+    </div>
+
+    <script src="dataApi.js"> </script>
+    
+    
+</body>
+</html>
