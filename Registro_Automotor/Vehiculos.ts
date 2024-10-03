@@ -1,6 +1,6 @@
 "use strict"
 
-class Vehiculos {
+class Vehiculo {
     //lista de atributos para objeto Vehiculos
    
     private patente:string;
@@ -58,7 +58,7 @@ class Vehiculos {
    }
  
    public getmodelo():number{
-          return this.numeroMotor;
+          return this.modelo;
    }
  
     public getnumeroMotor():number{
@@ -72,4 +72,4 @@ class Vehiculos {
  
 
 }
-export{Vehiculos} ;
+export{Vehiculo} ;

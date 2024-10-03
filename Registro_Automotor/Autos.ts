@@ -1,15 +1,15 @@
 
 "use strict"
 import {Titular }   from "./Titular";
-import {Vehiculos }   from "./Vehiculos";
-class Autos{
+import {Vehiculo}   from "./Vehiculos";
 
+export class Auto{
    
-    private Tipo :string;
-    private autos:Vehiculos;
-    private titular:Titular;
+    private Tipo :string;  //tipo sedan, utilitario, SUV etc
+    private autos:Vehiculo;//Caracteristicas de fabricacion chasis,motor,patente
+    private titular:Titular;//Titulat actual de "autos" (" recordar que contiene patente")
 
-    constructor(ctipo:string,cautos:Vehiculos,ctitular:Titular){
+    constructor(ctipo:string,cautos:Vehiculo,ctitular:Titular){
         this.Tipo=ctipo;
         this.autos=cautos;
         this.titular=ctitular;
@@ -21,7 +21,7 @@ class Autos{
   public settipo(stipo:string):void{
          this.Tipo=stipo;
   }
-  public setautos(sautos:Vehiculos):void{
+  public setautos(sautos:Vehiculo):void{
          this.autos=sautos;
   }
 
@@ -36,7 +36,7 @@ class Autos{
   public gettipo():string{
          return this.Tipo
    }
-   public getautos():Vehiculos{
+   public getautos():Vehiculo{
        return this.autos
  }
  public gettitular():Titular{
@@ -45,4 +45,3 @@ class Autos{
   
   
 }
-export{Autos} ;

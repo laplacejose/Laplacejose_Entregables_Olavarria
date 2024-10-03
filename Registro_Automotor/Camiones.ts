@@ -1,15 +1,15 @@
 
 "use strict"
-import {Vehiculos }   from "./Vehiculos";
+import {Vehiculo }   from "./Vehiculos";
 import {Titular }   from "./Titular";
-class Camiones{
+export class Camion{
 
    
     private capacidadCarga :number;
-    private camion:Vehiculos;
+    private camion:Vehiculo;
     private titular:Titular;
 
-    constructor(ccapacidadCarga:number,ccamion:Vehiculos,ctitular:Titular){
+    constructor(ccapacidadCarga:number,ccamion:Vehiculo,ctitular:Titular){
         this.capacidadCarga=ccapacidadCarga;
         this.camion=ccamion;
         this.titular=ctitular;
@@ -21,7 +21,7 @@ class Camiones{
   public setcapacidadCarga(scapacidadCarga:number):void{
          this.capacidadCarga=scapacidadCarga;
   }
-  public setautos(scamion:Vehiculos):void{
+  public setautos(scamion:Vehiculo):void{
          this.camion=scamion;
   }
   public settitular(stitular:Titular):void{
@@ -35,7 +35,7 @@ class Camiones{
   public getcapacidaCarga():number{
          return this.capacidadCarga
    }
-   public getcamion():Vehiculos{
+   public getcamion():Vehiculo{
        return this.camion
  }
  public gettitular():Titular{
@@ -44,4 +44,3 @@ class Camiones{
  }
 }
 
-export{Camiones} ;

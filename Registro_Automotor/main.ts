@@ -1,64 +1,26 @@
 
+"use strict"/*
 import {Titular }   from "./Titular";
 import {Vehiculo}   from "./Vehiculos";
-import {Auto}   from "./Autos";
+import {Auto }   from "./Autos";
 import {Moto}   from "./Motos";
 import {Camion }   from "./Camiones";
 
 
 
- class Registro_Automotor{
+const Titular1:Titular=new Titular("Juan",25333888);
+const vehiculo1:Vehiculo=new Vehiculo("dft333","ford",2015,2555555,"hdt4445")
+const Auto1:Auto= new Auto("Sedan",vehiculo1,Titular1);
 
-private registroAutos:Auto[]=[];
-private registroMotos:Moto[]=[];
-private registroCamiones:Camion[]=[];
-
-constructor(registroAutos:Auto[],registroMotos:Moto[],registroCamiones:Camion[]){
-    this.registroAutos=registroAutos;
-    this.registroMotos=registroMotos;
-    this.registroCamiones=registroCamiones;
-
-}
-
-//Metodos seters..
-
-public cargarRegistroAutos(ListaAutos):void{
-    this.registroAutos=ListaAutos;
-    console.log(this.registroAutos);
-  
-  }
-public cargarRegistroMotos():void{
-  this.registroMotos=[];
-
-}
-public cargarRegistroCamiones():void{
-    this.registroMotos=[];
-  
-  }
-
-// Metodos geters....
-public mostrarRegistroAutos():Auto[]{
-    return  this.registroAutos=[];
-  
-  }
-
-  public mostrarRegistroMotos():Moto[]{
-    return  this.registroMotos=[];
-  
-  }
-
-
-public mostrarRegistroCamiones():Camion[]{
-    return  this.registroCamiones=[];
-  
-  }
+const vehiculo2:Vehiculo= new Vehiculo("dft666","Mondial",2016,2678955,"hdt3335");
+const Moto1:Moto= new Moto(125,vehiculo2,Titular1);
 
 
 
-
-}
-
-
+console.log(`Datos de Moto :`);
+console.log(Moto1);
+console.log(`Datos de Auto : `);
+console.log(Auto1);*/
 export const ListaAutos=[
     {Tipo:'sedan',Vehiculo:{patente:"aid333",marca:"ford",modelo:2015,numeroMotor:9977555,chasis:"hdt995"},Titular:{nombre:"juan",dni:26000552}},
     {Tipo:'utilitario',Vehiculo:{patente:"atd883",marca:"ford",modelo:2010,numeroMotor:2777555,chasis:"hdt4345"},Titular:{nombre:"Pedro",dni:23880552}},
@@ -89,20 +51,3 @@ export const ListaCamiones=[
 
 ]
 console.log(ListaCamiones);
-
-
-/*
-const Titular1:Titular=new Titular("Juan",25333888);
-const vehiculo1:Vehiculo=new Vehiculo("dft333","ford",2015,2555555,"hdt4445")
-const Auto1:Auto= new Auto("Sedan",vehiculo1,Titular1);
-
-const vehiculo2:Vehiculo= new Vehiculo("dft666","Mondial",2016,2678955,"hdt3335");
-const Moto1:Moto= new Moto(125,vehiculo2,Titular1);
-
-
-
-console.log(`Datos de Moto :`);
-console.log(Moto1);
-console.log(`Datos de Auto : `);
-console.log(Auto1);
-*/

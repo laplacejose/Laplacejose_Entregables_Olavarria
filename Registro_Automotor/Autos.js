@@ -1,32 +1,32 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Autos = void 0;
-var Autos = /** @class */ (function () {
-    function Autos(ctipo, cautos, ctitular) {
+exports.Auto = void 0;
+var Auto = /** @class */ (function () {
+    function Auto(ctipo, cautos, ctitular) {
         this.Tipo = ctipo;
         this.autos = cautos;
         this.titular = ctitular;
     }
     //metodos set
-    Autos.prototype.settipo = function (stipo) {
+    Auto.prototype.settipo = function (stipo) {
         this.Tipo = stipo;
     };
-    Autos.prototype.setautos = function (sautos) {
+    Auto.prototype.setautos = function (sautos) {
         this.autos = sautos;
     };
-    Autos.prototype.settitular = function (stitular) {
+    Auto.prototype.settitular = function (stitular) {
         this.titular = stitular;
     };
     //metodos get
-    Autos.prototype.gettipo = function () {
+    Auto.prototype.gettipo = function () {
         return this.Tipo;
     };
-    Autos.prototype.getautos = function () {
+    Auto.prototype.getautos = function () {
         return this.autos;
     };
-    Autos.prototype.gettitular = function () {
+    Auto.prototype.gettitular = function () {
         return this.titular;
     };
-    return Autos;
+    return Auto;
 }());
-exports.Autos = Autos;
+exports.Auto = Auto;

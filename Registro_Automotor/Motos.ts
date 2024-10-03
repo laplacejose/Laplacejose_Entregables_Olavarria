@@ -1,15 +1,15 @@
 
 "use strict"
 import {Titular }   from "./Titular";
-import {Vehiculos }   from "./Vehiculos";
-class Motos{
+import {Vehiculo }   from "./Vehiculos";
 
-   
+export class Moto{
+
     private Cilindrada :number;
-    private motos:Vehiculos;
+    private motos:Vehiculo;
     private titular:Titular;
 
-    constructor(ccilindrada:number,cmotos:Vehiculos,ctitular:Titular){
+    constructor(ccilindrada:number,cmotos:Vehiculo,ctitular:Titular){
         this.Cilindrada=ccilindrada;
         this.motos=cmotos;
         this.titular=ctitular;
@@ -21,7 +21,7 @@ class Motos{
   public setcilindrada(scilindrada:number):void{
          this.Cilindrada=scilindrada;
   }
-  public setautos(smotos:Vehiculos):void{
+  public setautos(smotos:Vehiculo):void{
          this.motos=smotos;
   }
 
@@ -36,7 +36,7 @@ class Motos{
   public getcilindrada():number{
          return this.Cilindrada
    }
-   public getmotos():Vehiculos{
+   public getmotos():Vehiculo{
        return this.motos
  }
  public gettitular():Titular{
@@ -45,4 +45,3 @@ class Motos{
   
   
 }
-export{Motos} ;
