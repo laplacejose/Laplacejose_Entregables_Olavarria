@@ -13,10 +13,15 @@ class Titular{
 //metodos set
 
 public setnombre(snombre:string):void{
+    if (snombre.trim()!=""){  //sin espacios no es un dato vacio
  this.nombre=snombre;
 }
+}
 public setdni(sdni:number){
-    this.dni=sdni;
+    if (sdni >5000000){      //comparo con valor de referencial
+      this.dni=sdni;  
+    }
+    
 
 }
 
@@ -28,6 +33,7 @@ public getnombre():string{
     return this.nombre
    }
    public getdni():number{
+
     return this.dni
    }
 

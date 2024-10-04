@@ -1,6 +1,6 @@
 "use strict"
 
-class Vehiculo {
+ export class Vehiculo {
     //lista de atributos para objeto Vehiculos
    
     private patente:string;
@@ -72,4 +72,3 @@ class Vehiculo {
  
 
 }
-export{Vehiculo} ;

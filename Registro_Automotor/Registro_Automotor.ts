@@ -5,51 +5,62 @@ import {Auto}   from "./Autos";
 import {Moto}   from "./Motos";
 import {Camion }   from "./Camiones";
 
+ export class Registro_Automotor{
+        private numeroRegistro:number;        // no inicializo variables al inicio.
+        private registroAutos:Auto[];         //lista de objetos tipo Auto.
+        private registroMotos:Moto[];         //lista de objetos tipo Moto.
+        private registroCamiones:Camion[];    //lista de objetos tipo Camion.
 
-
- class Registro_Automotor{
-
-private registroAutos:Auto[]=[];
-private registroMotos:Moto[]=[];
-private registroCamiones:Camion[]=[];
-
-constructor(registroAutos:Auto[],registroMotos:Moto[],registroCamiones:Camion[]){
-    this.registroAutos=registroAutos;
-    this.registroMotos=registroMotos;
-    this.registroCamiones=registroCamiones;
+constructor(cnumeroRegistro:number){
+    this.numeroRegistro=cnumeroRegistro;    // se crea con su numero de registro.Aqui se inicializan variables.
+    this.registroAutos=[];                  //inicializa con lista vacia.
+    this.registroMotos=[];                  //inicializa con lista vacia.
+    this.registroCamiones=[];               //inicializa con lista vacia.
 
 }
 
 //Metodos seters..
 
-public cargarRegistroAutos(ListaAutos):void{
-    this.registroAutos=ListaAutos;
-    console.log(this.registroAutos);
+public cargarnumeroRegistro(numReg:number):void{
+  this.numeroRegistro=numReg;
   
+}
+
+public cargarRegistroAutos(dataAuto:Auto):void{
+    this.registroAutos.push(dataAuto);
+ 
   }
-public cargarRegistroMotos():void{
-  this.registroMotos=[];
+public cargarRegistroMotos(dataMoto:Moto):void{
+  this.registroMotos.push(dataMoto);
+  
 
 }
-public cargarRegistroCamiones():void{
-    this.registroMotos=[];
-  
+public cargarRegistroCamiones(dataCamion:Camion):void{
+    this.registroCamiones.push(dataCamion);
+   
   }
 
 // Metodos geters....
+
+public mostrarnumeroRegistro():number{
+  return  this.numeroRegistro;
+
+}
+
+
 public mostrarRegistroAutos():Auto[]{
-    return  this.registroAutos=[];
+    return  this.registroAutos;
   
   }
 
   public mostrarRegistroMotos():Moto[]{
-    return  this.registroMotos=[];
+    return  this.registroMotos;
   
   }
 
 
 public mostrarRegistroCamiones():Camion[]{
-    return  this.registroCamiones=[];
+    return  this.registroCamiones;
   
   }
 
@@ -57,52 +68,3 @@ public mostrarRegistroCamiones():Camion[]{
 
 
 }
-
-
-export const ListaAutos=[
-    {Tipo:'sedan',Vehiculo:{patente:"aid333",marca:"ford",modelo:2015,numeroMotor:9977555,chasis:"hdt995"},Titular:{nombre:"juan",dni:26000552}},
-    {Tipo:'utilitario',Vehiculo:{patente:"atd883",marca:"ford",modelo:2010,numeroMotor:2777555,chasis:"hdt4345"},Titular:{nombre:"Pedro",dni:23880552}},
-    {Tipo:'suv',Vehiculo:{patente:"ahd663",marca:"ford",modelo:2017,numeroMotor:2555555,chasis:"hdt3345"},Titular:{nombre:"Lucas",dni:22066552}},
-    {Tipo:'sport',Vehiculo:{patente:"ttd553",marca:"ford",modelo:2019,numeroMotor:2556600,chasis:"hdt0045"},Titular:{nombre:"Maria",dni:21550552}}
-
-]
-console.log(ListaAutos);
-
-
-
-export const ListaMotos=[
-    {cil:125,Vehiculo:{patente:"aid333",marca:"ford",modelo:2015,numeroMotor:9977555,chasis:"hdt995"},Titular:{nombre:"juan",dni:26000552}},
-    {cil:150,Vehiculo:{patente:"atd883",marca:"ford",modelo:2010,numeroMotor:2777555,chasis:"hdt4345"},Titular:{nombre:"Pedro",dni:23880552}},
-    {cil:250,Vehiculo:{patente:"ahd663",marca:"ford",modelo:2017,numeroMotor:2555555,chasis:"hdt3345"},Titular:{nombre:"Lucas",dni:22066552}},
-    {cil:250,Vehiculo:{patente:"ttd553",marca:"ford",modelo:2019,numeroMotor:2556600,chasis:"hdt0045"},Titular:{nombre:"Maria",dni:21550552}}
-
-]
-console.log(ListaMotos);
-
-
-
-export const ListaCamiones=[
-    {Tipo:2000,Vehiculo:{patente:"aid333",marca:"ford",modelo:2015,numeroMotor:9977555,chasis:"hdt995"},Titular:{nombre:"juan",dni:26000552}},
-    {Tipo:200,Vehiculo:{patente:"atd883",marca:"ford",modelo:2010,numeroMotor:2777555,chasis:"hdt4345"},Titular:{nombre:"Pedro",dni:23880552}},
-    {Tipo:200,Vehiculo:{patente:"ahd663",marca:"ford",modelo:2017,numeroMotor:2555555,chasis:"hdt3345"},Titular:{nombre:"Lucas",dni:22066552}},
-    {Tipo:200,Vehiculo:{patente:"ttd553",marca:"ford",modelo:2019,numeroMotor:2556600,chasis:"hdt0045"},Titular:{nombre:"Maria",dni:21550552}}
-
-]
-console.log(ListaCamiones);
-
-
-/*
-const Titular1:Titular=new Titular("Juan",25333888);
-const vehiculo1:Vehiculo=new Vehiculo("dft333","ford",2015,2555555,"hdt4445")
-const Auto1:Auto= new Auto("Sedan",vehiculo1,Titular1);
-
-const vehiculo2:Vehiculo= new Vehiculo("dft666","Mondial",2016,2678955,"hdt3335");
-const Moto1:Moto= new Moto(125,vehiculo2,Titular1);
-
-
-
-console.log(`Datos de Moto :`);
-console.log(Moto1);
-console.log(`Datos de Auto : `);
-console.log(Auto1);
-*/

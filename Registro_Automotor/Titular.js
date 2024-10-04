@@ -8,10 +8,14 @@ var Titular = /** @class */ (function () {
     }
     //metodos set
     Titular.prototype.setnombre = function (snombre) {
-        this.nombre = snombre;
+        if (snombre.trim() != "") { //sin espacios no es un dato vacio
+            this.nombre = snombre;
+        }
     };
     Titular.prototype.setdni = function (sdni) {
-        this.dni = sdni;
+        if (sdni > 5000000) { //comparo con valor de referencial
+            this.dni = sdni;
+        }
     };
     //metodos get
     Titular.prototype.getnombre = function () {
