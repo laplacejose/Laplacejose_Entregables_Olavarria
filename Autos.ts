@@ -12,7 +12,6 @@ import {Titular }   from "./Titular";
         this.Tipo=ctipo;
         this.titular=ctitular;
       
-
       }
   //metodos set
   

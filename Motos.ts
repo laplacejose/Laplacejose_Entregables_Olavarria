@@ -19,7 +19,6 @@ import {Titular }   from "./Titular";
          this.Cilindrada=scilindrada;
   }
   
-
   public settitular(stitular:Titular):void{
          this.titular=stitular;
   }

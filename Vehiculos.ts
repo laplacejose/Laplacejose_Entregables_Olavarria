@@ -1,14 +1,14 @@
 "use strict"
 
   class Vehiculo {
-    //lista de atributos para objeto Vehiculos
+    //lista de atributos para objeto Vehiculos 
    
     protected patente:string;
     protected marca:string;// Marca del vehiculo
     protected modelo:number;// año de fabricacion 
     protected numeroMotor:number;
     protected chasis:string;
-   
+
     constructor(cpatente:string,cmarca:string,cmodelo:number, cnumeroMotor:number,cchasis:string){
         this.patente=cpatente;
         this.marca=cmarca;

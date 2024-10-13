@@ -4,7 +4,6 @@
 import {Titular }   from "./Titular";
 class Camion extends Vehiculo{
 
-   
     private capacidadCarga :number;
   
     private titular:Titular;

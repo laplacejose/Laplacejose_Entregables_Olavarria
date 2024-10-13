@@ -4,7 +4,6 @@ class Titular{
     private nombre:string;
     private dni:number;
    
-
     constructor(cnombre:string,cdni:number){
       this.nombre=cnombre;
       this.dni=cdni;

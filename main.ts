@@ -34,9 +34,6 @@ const vehiculo11:Vehiculo=new Vehiculo("atd883","Mercedez benz",2010,2777555,"hd
 const vehiculo12:Vehiculo=new Vehiculo("ahd663","Mercedez benz",2017,2555555,"hdt3345")
 
 
-
-
-
 // Crear OBJETOS AUTOS a partir de datos VEHICULO Y TITULAR ...INSTANCIAR
 const Auto1:Auto= new Auto("Sedan",vehiculo1,Titular1);
 const Auto2:Auto= new Auto("Utilitario",vehiculo2,Titular2);
