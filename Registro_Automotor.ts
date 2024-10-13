@@ -1,6 +1,5 @@
 
 import {Titular }   from "./Titular";
-import {Vehiculo}   from "./Vehiculos";
 import {Auto}   from "./Autos";
 import {Moto}   from "./Motos";
 import {Camion }   from "./Camiones";
@@ -63,8 +62,6 @@ public mostrarRegistroCamiones():Camion[]{
     return  this.registroCamiones;
   
   }
-
-
 
 
 }

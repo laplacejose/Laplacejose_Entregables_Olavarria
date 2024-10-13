@@ -11,7 +11,6 @@ import {Titular }   from "./Titular";
        super(cpatente,cmarca,cmodelo,cnumeroMotor,cchasis)
         this.Cilindrada=ccilindrada;
         this.titular=ctitular;
-      
 
       }
   //metodos set

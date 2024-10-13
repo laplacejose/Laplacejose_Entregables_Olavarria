@@ -51,7 +51,6 @@ const Moto1:Moto= new Moto(125,vehiculo7,Titular5);
 const Moto2:Moto= new Moto(250,vehiculo8,Titular5);
 const Moto3:Moto= new Moto(500,vehiculo9,Titular4);
 
-
 // Crear OBJETOS MOTOS a partir de datos VEHICULO Y TITULAR ...INSTANCIAR
 
 const camion1:Camion= new Camion(40,vehiculo10,Titular2);

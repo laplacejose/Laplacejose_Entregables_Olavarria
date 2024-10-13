@@ -9,9 +9,6 @@
     protected numeroMotor:number;
     protected chasis:string;
    
-   
-
-
     constructor(cpatente:string,cmarca:string,cmodelo:number, cnumeroMotor:number,cchasis:string){
         this.patente=cpatente;
         this.marca=cmarca;

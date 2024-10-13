@@ -27,7 +27,6 @@ class Camion extends Vehiculo{
   }
 
   
-  
   //metodos get
 
   public getcapacidaCarga():number{

@@ -26,8 +26,6 @@ public setdni(sdni:number){
 }
 
 
-
-
 //metodos get
 public getnombre():string{
     return this.nombre

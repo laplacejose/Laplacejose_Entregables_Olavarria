@@ -10,7 +10,6 @@ import {Titular }   from "./Titular";
     constructor(ctipo:string,cpatente:string,cmarca:string,cmodelo:number,cnumeroMotor:number,cchasis:string,ctitular:Titular){
        super(cpatente,cmarca,cmodelo,cnumeroMotor,cchasis)
         this.Tipo=ctipo;
-       /* this.autos=cautos;*/
         this.titular=ctitular;
       
 
@@ -20,15 +19,12 @@ import {Titular }   from "./Titular";
   public settipo(stipo:string):void{
          this.Tipo=stipo;
   }
- /* public setautos(sautos:Vehiculo):void{
-         this.autos=sautos;
-  }*/
+
 
   public settitular(stitular:Titular):void{
          this.titular=stitular;
   }
 
-  
   
   //metodos get
 
