@@ -77,3 +77,6 @@ registroOlavarria1.cargarRegistroAutos*/
 var NuevoTitular = new Titular_1.Titular("Pablo", 25669836);
 Auto4.settitular(NuevoTitular);
 console.log(Auto4.gettitular()); //consulta nuevo titular de Auto4
+//borrar un Auto del registroOlavarria1
+var pateneteABorrar = Auto4;
+console.log(registroOlavarria1);

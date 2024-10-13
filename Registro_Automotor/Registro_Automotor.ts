@@ -64,7 +64,17 @@ public mostrarRegistroCamiones():Camion[]{
   
   }
 
+  public borrarRegistroAutos(dataPatente:Auto):void {
+    /*
+  if (this.registroAutos.includes(dataPatente)){
 
+    const posicionAuto:number=this.registroAutos.indexOf(dataPatente)
+    this.registroAutos.splice(posicionAuto,1);
+  }*/
+  }
+  
 
 
 }
+
+

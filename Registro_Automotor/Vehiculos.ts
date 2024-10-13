@@ -3,7 +3,7 @@
  export class Vehiculo {
     //lista de atributos para objeto Vehiculos
    
-    private patente:string;
+    public patente:string;
     private marca:string;// Marca del vehiculo
     private modelo:number;// año de fabricacion 
     private numeroMotor:number;

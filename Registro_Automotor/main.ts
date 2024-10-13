@@ -1,5 +1,6 @@
 
 "use strict"
+
 import {Titular }   from "./Titular";
 import {Vehiculo}   from "./Vehiculos";
 import {Auto }   from "./Autos";
@@ -95,6 +96,18 @@ registroOlavarria1.cargarRegistroAutos*/
 let NuevoTitular:Titular= new Titular ("Pablo",25669836,);
 Auto4.settitular(NuevoTitular);
 console.log(Auto4.gettitular());//consulta nuevo titular de Auto4
+
+//borrar un Auto del registroOlavarria1
+let pateneteABorrar=Auto4;
+console.log(registroOlavarria1);
+
+registroOlavarria1.borrarRegistroAutos(pateneteABorrar);
+console.log("luego de borrar");//consulta luego ..titular de Auto4
+console.log(Auto4.gettitular());//consulta luego... titular de Auto4
+
+
+
+
 
 
 

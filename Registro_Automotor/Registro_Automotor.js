@@ -34,6 +34,14 @@ var Registro_Automotor = /** @class */ (function () {
     Registro_Automotor.prototype.mostrarRegistroCamiones = function () {
         return this.registroCamiones;
     };
+    Registro_Automotor.prototype.borrarRegistroAutos = function (dataPatente) {
+        /*
+      if (this.registroAutos.includes(dataPatente)){
+    
+        const posicionAuto:number=this.registroAutos.indexOf(dataPatente)
+        this.registroAutos.splice(posicionAuto,1);
+      }*/
+    };
     return Registro_Automotor;
 }());
 exports.Registro_Automotor = Registro_Automotor;
