@@ -35,24 +35,24 @@ const vehiculo12:Vehiculo=new Vehiculo("ahd663","Mercedez benz",2017,2555555,"hd
 
 
 // Crear OBJETOS AUTOS a partir de datos VEHICULO Y TITULAR ...INSTANCIAR
-const Auto1:Auto= new Auto("Sedan",vehiculo1,Titular1);
-const Auto2:Auto= new Auto("Utilitario",vehiculo2,Titular2);
-const Auto3:Auto= new Auto("Suv",vehiculo3,Titular3);
-const Auto4:Auto= new Auto("Familiar",vehiculo4,Titular4);
-const Auto5:Auto= new Auto("Berlina",vehiculo5,Titular6);
-const Auto6:Auto= new Auto("Todoterreno",vehiculo6,Titular6);
+const Auto1:Auto= new Auto("Sedan","dft333","ford",2015,2555555,"fdt4445",Titular1);
+const Auto2:Auto= new Auto("Utilitario","aid333","Toyota",2015,9977555,"ttt995",Titular2);
+const Auto3:Auto= new Auto("Suv","dft333","Renault",2015,2555555,"rrt4445",Titular3);
+const Auto4:Auto= new Auto("Familiar","aid333","Fiat",2015,9977555,"fft995",Titular4);
+const Auto5:Auto= new Auto("Berlina","dft333","Chevrolet",2015,2555555,"cch4445",Titular6);
+const Auto6:Auto= new Auto("Todoterreno","aid333","Honda",2015,9977555,"hho995",Titular6);
 
 // Crear OBJETOS MOTOS a partir de datos VEHICULO Y TITULAR ...INSTANCIAR
 
-const Moto1:Moto= new Moto(125,vehiculo7,Titular5);
-const Moto2:Moto= new Moto(250,vehiculo8,Titular5);
-const Moto3:Moto= new Moto(500,vehiculo9,Titular4);
+const Moto1:Moto= new Moto(125,"dft666","Mondial",2016,2678955,"hdt3335",Titular5);
+const Moto2:Moto= new Moto(250,"dft666","Mondial",2016,2678955,"hdt3335",Titular5);
+const Moto3:Moto= new Moto(500,"dft666","Mondial",2016,2678955,"hdt3335",Titular4);
 
 // Crear OBJETOS MOTOS a partir de datos VEHICULO Y TITULAR ...INSTANCIAR
 
-const camion1:Camion= new Camion(40,vehiculo10,Titular2);
-const camion2:Camion= new Camion(45,vehiculo11,Titular2);
-const camion3:Camion= new Camion(50,vehiculo12,Titular4);
+const camion1:Camion= new Camion(40,"aid333","ford cargo",2015,9977555,"hdt995",Titular2);
+const camion2:Camion= new Camion(45,"atd883","Mercedez benz",2010,2777555,"hdt4345",Titular2);
+const camion3:Camion= new Camion(50,"ahd663","Mercedez benz",2017,2555555,"hdt3345",Titular4);
 
 //Crear el primer registro automotor
 let registroOlavarria1:Registro_Automotor=new Registro_Automotor(1);
