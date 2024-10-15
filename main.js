@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var Titular_1 = require("./Titular");
-var Vehiculos_1 = require("./Vehiculos");
+/*import {Vehiculo}   from "./Vehiculos";*/
 var Autos_1 = require("./Autos");
 var Motos_1 = require("./Motos");
 var Camiones_1 = require("./Camiones");
@@ -17,35 +17,35 @@ var Titular7 = new Titular_1.Titular("Pedro", 22233888);
 var Titular8 = new Titular_1.Titular("Diego", 26600552);
 //Listado de Vehiculos o Patentes 
 //    AUTOS
-var vehiculo1 = new Vehiculos_1.Vehiculo("dft333", "ford", 2015, 2555555, "fdt4445");
-var vehiculo2 = new Vehiculos_1.Vehiculo("aid333", "Toyota", 2015, 9977555, "ttt995");
-var vehiculo3 = new Vehiculos_1.Vehiculo("dft333", "Renault", 2015, 2555555, "rrt4445");
-var vehiculo4 = new Vehiculos_1.Vehiculo("aid333", "Fiat", 2015, 9977555, "fft995");
-var vehiculo5 = new Vehiculos_1.Vehiculo("dft333", "Chevrolet", 2015, 2555555, "cch4445");
-var vehiculo6 = new Vehiculos_1.Vehiculo("aid333", "Honda", 2015, 9977555, "hho995");
+var vehiculo1 = new Vehiculo("dft333", "ford", 2015, 2555555, "fdt4445");
+var vehiculo2 = new Vehiculo("aid333", "Toyota", 2015, 9977555, "ttt995");
+var vehiculo3 = new Vehiculo("dft333", "Renault", 2015, 2555555, "rrt4445");
+var vehiculo4 = new Vehiculo("aid333", "Fiat", 2015, 9977555, "fft995");
+var vehiculo5 = new Vehiculo("dft333", "Chevrolet", 2015, 2555555, "cch4445");
+var vehiculo6 = new Vehiculo("aid333", "Honda", 2015, 9977555, "hho995");
 //    MOTOS
-var vehiculo7 = new Vehiculos_1.Vehiculo("dft666", "Mondial", 2016, 2678955, "hdt3335");
-var vehiculo8 = new Vehiculos_1.Vehiculo("dft666", "Mondial", 2016, 2678955, "hdt3335");
-var vehiculo9 = new Vehiculos_1.Vehiculo("dft666", "Mondial", 2016, 2678955, "hdt3335");
+var vehiculo7 = new Vehiculo("dft666", "Mondial", 2016, 2678955, "hdt3335");
+var vehiculo8 = new Vehiculo("dft666", "Mondial", 2016, 2678955, "hdt3335");
+var vehiculo9 = new Vehiculo("dft666", "Mondial", 2016, 2678955, "hdt3335");
 //    CAMIONES
-var vehiculo10 = new Vehiculos_1.Vehiculo("aid333", "ford cargo", 2015, 9977555, "hdt995");
-var vehiculo11 = new Vehiculos_1.Vehiculo("atd883", "Mercedez benz", 2010, 2777555, "hdt4345");
-var vehiculo12 = new Vehiculos_1.Vehiculo("ahd663", "Mercedez benz", 2017, 2555555, "hdt3345");
+var vehiculo10 = new Vehiculo("aid333", "ford cargo", 2015, 9977555, "hdt995");
+var vehiculo11 = new Vehiculo("atd883", "Mercedez benz", 2010, 2777555, "hdt4345");
+var vehiculo12 = new Vehiculo("ahd663", "Mercedez benz", 2017, 2555555, "hdt3345");
 // Crear OBJETOS AUTOS a partir de datos VEHICULO Y TITULAR ...INSTANCIAR
-var Auto1 = new Autos_1.Auto("Sedan", vehiculo1, Titular1);
-var Auto2 = new Autos_1.Auto("Utilitario", vehiculo2, Titular2);
-var Auto3 = new Autos_1.Auto("Suv", vehiculo3, Titular3);
-var Auto4 = new Autos_1.Auto("Familiar", vehiculo4, Titular4);
-var Auto5 = new Autos_1.Auto("Berlina", vehiculo5, Titular6);
-var Auto6 = new Autos_1.Auto("Todoterreno", vehiculo6, Titular6);
+var Auto1 = new Autos_1.Auto("Sedan", "dft333", "ford", 2015, 2555555, "fdt4445", Titular1);
+var Auto2 = new Autos_1.Auto("Utilitario", "aid333", "Toyota", 2015, 9977555, "ttt995", Titular2);
+var Auto3 = new Autos_1.Auto("Suv", "dft333", "Renault", 2015, 2555555, "rrt4445", Titular3);
+var Auto4 = new Autos_1.Auto("Familiar", "aid333", "Fiat", 2015, 9977555, "fft995", Titular4);
+var Auto5 = new Autos_1.Auto("Berlina", "dft333", "Chevrolet", 2015, 2555555, "cch4445", Titular6);
+var Auto6 = new Autos_1.Auto("Todoterreno", "aid333", "Honda", 2015, 9977555, "hho995", Titular6);
 // Crear OBJETOS MOTOS a partir de datos VEHICULO Y TITULAR ...INSTANCIAR
-var Moto1 = new Motos_1.Moto(125, vehiculo7, Titular5);
-var Moto2 = new Motos_1.Moto(250, vehiculo8, Titular5);
-var Moto3 = new Motos_1.Moto(500, vehiculo9, Titular4);
+var Moto1 = new Motos_1.Moto(125, "dft666", "Mondial", 2016, 2678955, "hdt3335", Titular5);
+var Moto2 = new Motos_1.Moto(250, "dft666", "Mondial", 2016, 2678955, "hdt3335", Titular5);
+var Moto3 = new Motos_1.Moto(500, "dft666", "Mondial", 2016, 2678955, "hdt3335", Titular4);
 // Crear OBJETOS MOTOS a partir de datos VEHICULO Y TITULAR ...INSTANCIAR
-var camion1 = new Camiones_1.Camion(40, vehiculo10, Titular2);
-var camion2 = new Camiones_1.Camion(45, vehiculo11, Titular2);
-var camion3 = new Camiones_1.Camion(50, vehiculo12, Titular4);
+var camion1 = new Camiones_1.Camion(40, "aid333", "ford cargo", 2015, 9977555, "hdt995", Titular2);
+var camion2 = new Camiones_1.Camion(45, "atd883", "Mercedez benz", 2010, 2777555, "hdt4345", Titular2);
+var camion3 = new Camiones_1.Camion(50, "ahd663", "Mercedez benz", 2017, 2555555, "hdt3345", Titular4);
 //Crear el primer registro automotor
 var registroOlavarria1 = new Registro_Automotor_1.Registro_Automotor(1);
 console.log("El numero de registro es");
