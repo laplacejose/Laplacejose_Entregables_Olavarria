@@ -18,7 +18,7 @@ const Titular8:Titular=new Titular("Diego",26600552);
 
 //Listado de Vehiculos o Patentes 
 //    AUTOS
-const vehiculo1:Vehiculo=new Vehiculo("dft333","ford",2015,2555555,"fdt4445")
+/*const vehiculo1:Vehiculo=new Vehiculo("dft333","ford",2015,2555555,"fdt4445")
 const vehiculo2:Vehiculo=new Vehiculo("aid333","Toyota",2015,9977555,"ttt995")
 const vehiculo3:Vehiculo=new Vehiculo("dft333","Renault",2015,2555555,"rrt4445")
 const vehiculo4:Vehiculo=new Vehiculo("aid333","Fiat",2015,9977555,"fft995")
@@ -32,7 +32,7 @@ const vehiculo9:Vehiculo= new Vehiculo("dft666","Mondial",2016,2678955,"hdt3335"
 const vehiculo10:Vehiculo=new Vehiculo("aid333","ford cargo",2015,9977555,"hdt995")
 const vehiculo11:Vehiculo=new Vehiculo("atd883","Mercedez benz",2010,2777555,"hdt4345")
 const vehiculo12:Vehiculo=new Vehiculo("ahd663","Mercedez benz",2017,2555555,"hdt3345")
-
+*/
 
 // Crear OBJETOS AUTOS a partir de datos VEHICULO Y TITULAR ...INSTANCIAR
 const Auto1:Auto= new Auto("Sedan","dft333","ford",2015,2555555,"fdt4445",Titular1);
@@ -88,7 +88,7 @@ console.log(Auto4.gettitular());//consulta de titular de Auto4
 
 /*registroOlavarria1.cargarRegistroAutos(Auto4);
 registroOlavarria1.cargarRegistroAutos*/
-let NuevoTitular:Titular= new Titular ("Pablo",25669836,);
+let NuevoTitular:Titular= new Titular ("Lucas",25669836,);
 Auto4.settitular(NuevoTitular);
 console.log(Auto4.gettitular());//consulta nuevo titular de Auto4
 

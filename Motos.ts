@@ -1,6 +1,7 @@
 
 "use strict"
 import {Titular }   from "./Titular";
+import { Vehiculo } from "./Vehiculos";
 
  class Moto extends Vehiculo{
 

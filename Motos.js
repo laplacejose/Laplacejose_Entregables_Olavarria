@@ -16,6 +16,7 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Moto = void 0;
+var Vehiculos_1 = require("./Vehiculos");
 var Moto = /** @class */ (function (_super) {
     __extends(Moto, _super);
     function Moto(ccilindrada, cpatente, cmarca, cmodelo, cnumeroMotor, cchasis, ctitular) {
@@ -39,5 +40,5 @@ var Moto = /** @class */ (function (_super) {
         return this.titular;
     };
     return Moto;
-}(Vehiculo));
+}(Vehiculos_1.Vehiculo));
 exports.Moto = Moto;
